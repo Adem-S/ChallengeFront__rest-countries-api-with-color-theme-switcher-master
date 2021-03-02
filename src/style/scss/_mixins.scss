@@ -1,0 +1,31 @@
+
+@mixin block-element ($padding: 0, $margin: 0){
+    background: var(--bg-elmt);
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    padding: $padding;
+    margin: $margin;
+}
+
+
+@mixin flex($direction: row, $justify: flex-start, $align: center, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin grid ($columns: auto, $rows: auto, $gap:auto) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+
+@mixin icon ($height:1em, $width: 1em, $margin:0, $filter: var(--filter)) {
+    height: $height;
+    width: $width;
+    margin: $margin;
+    filter: $filter;
+}

@@ -1,0 +1,51 @@
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--font-clr);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+    font-size: $font-size;
+    font-weight: 600;
+    background: var(--bg);
+    @media (min-width: 1800px) {
+        font-size: 18px;
+    }
+}
+
+input, select, button {
+    background: inherit;
+    color: inherit;
+    border: none;
+    font-size: inherit;
+    font-weight: 600;
+    appearance: none;
+    outline: none;
+}
+
+
+input:focus, select:focus {
+    outline: none;
+}
+
+
+select, button {
+    cursor: pointer;
+}
+
+button {
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+}
+
+span {
+    font-weight: 600;
+}
